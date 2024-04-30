@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".PrendreRdv"
+        android:scrollbarStyle="insideInset">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+            <AutoCompleteTextView
+                    android:text="sélectionner un client"
+                    android:textColor="#B1B1B1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/proConcerne"
+                    android:inputType="none"
+                    android:layout_weight="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+                android:text="date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateButton"
+                android:backgroundTint="#985EE0"/>
+
+
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendarPick"
+                />
+
+        <Button
+                android:text="heure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heureButton"
+                android:backgroundTint="#985EE0"/>
+
+        <TimePicker
+                android:id="@+id/timePickerRdv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        <!-- Bouton "ajouterClient" -->
+
+        <Button
+                android:id="@+id/btnPrendreRdv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="prendre RDV"
+                />
+
+    </LinearLayout>
+</ScrollView>
